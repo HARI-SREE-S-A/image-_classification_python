@@ -1,14 +1,1 @@
-inputimg = 'C:\Anaconda3\image_train'
-catogories = ["cat","dog"]
-data = []
-labels =[]
 
-for catagory_index,catagory in enumerate(catogories):
-    for file in os.listdir(inputimg):
-        img_path = os.path.join(inputimg,catagory,file)
-        img = imread(img_path)
-        resize = (img,(15,15))
-        data.append(img.flatten())
-        label.append(catagory_index)
-data = np.asarray(data)
-labels = np.asarray(labels)
