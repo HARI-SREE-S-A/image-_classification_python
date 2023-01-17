@@ -5,6 +5,7 @@ data = []
 labels = []
 
 
+
 for category_index,category in enumerate(categories):
     for file in os.listdir(os.path.join(image_dir,category)):
         image_path = os.path.join(image_dir,category,file)
